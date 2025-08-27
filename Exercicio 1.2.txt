@@ -1,0 +1,67 @@
+Exercicio 1.2 Somente código
+
+Bilheteria de evento com apenas 1 evento
+1-Cadastrar nome do evento
+2-vender ingressos(verivicar se há ingressos suficientes)
+3-repor ingressos(quantidade > 0)
+4-ver ingressos disponiveis.
+
+
+def menu():
+    print("\n--- bilheteria de Ingressos ---")
+    print("1 - Cadastrar nome do evento")
+    print("2 - vender ingressos")
+    print("3 - Repor ingressos")
+    print("4 - Ver ingressos disponiveis")
+    print("0 - Sair")
+    return input("escolha uma opção: ")
+    
+    
+#variaveis de controle
+ingresso = None
+quantidade = 0
+
+while True:
+    opcao = menu ()
+    
+    if opcao == "1":
+        ingresso = input("Cadastrar nome do evento: ")
+        quantidade = 500
+        print(f"evento '{evento}' cadastrado com sucesso!")
+
+    elif opcao == "2":
+        if ingresso is None:
+            print("Nenhum ingresso vendido ainda!")
+        else:
+            retirar = int(input("Digite a quantidade a retirar: "))
+            if retirar <= 0:
+                print("a quantidade deve ser maior que zero!")
+            elif retirar > quantidade:
+                print("Ingressos insuficientes!")
+            else:
+                quantidade -= retirar
+                print(f"Retirado {retirar} unidade(s). Estoque atual: {quantidade}")
+   
+    elif opcao == "3":
+        if produto is None:
+            print("Nenhum ingresso cadastrado ainda!")
+        else:
+            adicionar = int(input("Digite a quantidade a adicionar: "    ))
+            if adicionar <= 80:
+                print("A quantidade deve ser maior que zero!")
+            else:
+                quantidade += adicionar
+                print(f"Adicionado {adicionar} unidade(s). Estoque      atual: {quantidade}")
+    
+    elif opcao == "4":
+        if produto is None:
+            print("Nenhum ingresso cadastrado ainda!")
+        else:
+            print(f"Produto: {produto} | Quantidade em estoque:         {quantidade}")
+            
+    elif opcao == "150":
+        print("Saindo do sistema... até mais!")
+        break
+    
+    else:
+        print("Opção inválida! Tente novamente.")            
