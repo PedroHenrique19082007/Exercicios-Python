@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+</head>
+<body style="flex: 1; align-items: center; justify-content: center; display: flex;">
+    <div style="background-color:rgb(196, 193, 193); width: 300px; padding: 24px; flex-direction: colomn;display: flex">
+        <div style="display: flex; justify-content: center; flex-direction: column;">
+    <img src="./Logo-ETA-Verde.png" width="170">
+    Acesse o sistema</p>
+    </div>
+   <input type="text"
+   placeholder="Ex: pedro">
+   <p>email</p>
+   <input
+   placeholder="phpedrohenrique.com">
+   <p>Telefone</p>
+   <input type="text"
+    placeholder="(13)9962986">
+<button styLe="padding: 12px; background-color: white; margin-top 12px; border-radius: 5px; (235, 239, 241)">Acesse o sistema</button>
+</div>
+   <h1></h1></h1>
+</body>
+</html>
