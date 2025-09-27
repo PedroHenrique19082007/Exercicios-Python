@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UFT-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sistema de Login - Projeto Integrador</title>
+        <link rel="stylesheet" href="Style.css" />
+    </head>
+    <body>
+        <div class="container">
+        <!-- Tela de Login -->
+         <div id="LoginForm" class="form-container active">
+            <div class="form=header">
+                <h2>Login</h2>
+                <p>Entre com suas credenciais</p>
+            </div>
+
+            <div id="loginAlert"></div>
+
+            <form id="loginFormElement">
+                <div class="form-group">
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="loginEmail">Senha</label>
+                    <input type="password" id="loginSenha" required />
+                </div>
+
+                <button type="submit" class="btn btn-primary">Entrar</button>
+                <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="showRegister()"
+                >
+                Criar Conta
+               </button>
+              </form>
+             </div>
+             
+             <!-- Tela de Cafastro -->
+              <div id="registerForm" class="form-container">
+                <div class="form-header">
+                    <h2>Cadastro</h2>
+                    <p>Crie sua conta</p>
+                    </div>
+
+                    <div id="registerAlert"><</div>
+                    
+                    <form id="registerFormElement">
+                        <div class="form-group">
+                            <label for="regsiterNome">Nome</label>
+                            <input type="text" id="registerNome" required />
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Cadastrar</button>
+                            <button type="button" class="btn btn-secondary" onclick="showLogin()">
+                                Já tenho conta
+                                </button>
+                                </form>
+                            </div>
+
+                            <!-- Dashboard -->
+                             <div id="dashboard" class="dashboard">
+                                <div class="form-header">
+                                    <h2>Dashboard</h2>
+                                    <P>Be,-vindo ao sistema!</P>
+                                    </div>
+
+                                    <div class="user-info">
+                                        <h3>Suas informações:</h3>
+                                        <div id="usersList">Carregando usuários...</div>
+                                    <div>
+
+                                        <h3>Usuários Cadastrados:</h3>
+                                        <div id="userslist" class="users-list">
+                                        <div class="loading">Carregando usuário...</div>
+                                        </div>
+
+                                        <button class="btn btn-secondary" onclick="logout()">Sair</button>
+                                        </div>
+                                        </div>
+
+                                        <script src="script.js"></script>
+                                    </body>
+                                    </html>
+
+
+
